@@ -21,13 +21,17 @@
       <TextField fx:id="name" layoutX="105.0" layoutY="94.0" />
       <TextField fx:id="idAu" layoutX="105.0" layoutY="196.0" />
       <ComboBox fx:id="type" layoutX="104.0" layoutY="128.0" prefWidth="150.0" />
-      <Button layoutX="104.0" layoutY="270.0" mnemonicParsing="false" onAction="#add" text="Thêm" />
-      <Button layoutX="264.0" layoutY="270.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
+      <HBox layoutX="60.0" layoutY="250.0" spacing="10.0">
+         <children>
+            <Button layoutX="104.0" layoutY="270.0" mnemonicParsing="false" onAction="#add" text="Thêm" />
+            <Button layoutX="167.0" layoutY="270.0" mnemonicParsing="false" onAction="#addAuthor" text="Thêm Tác giả" />
+            <Button layoutX="264.0" layoutY="270.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
+         </children>
+      </HBox>
       <Label fx:id="tip" layoutX="18.0" layoutY="233.0" prefHeight="17.0" prefWidth="293.0" textFill="#fc0000">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Button layoutX="167.0" layoutY="270.0" mnemonicParsing="false" onAction="#addAuthor" text="Thêm Tác giả" />
       <TextField fx:id="price" layoutX="105.0" layoutY="165.0" />
    </children>
 </fx:root>
