@@ -8,8 +8,12 @@
 <fx:root prefHeight="306.0" prefWidth="318.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="tip" layoutX="114.0" layoutY="243.0" textFill="#fc0000" />
-      <Button layoutX="189.0" layoutY="267.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
-      <Button layoutX="115.0" layoutY="267.0" mnemonicParsing="false" onAction="#edit" text="Sửa" />
+      <HBox layoutX="115.0" layoutY="250.0" spacing="20.0">
+         <children>
+            <Button layoutX="115.0" layoutY="267.0" mnemonicParsing="false" onAction="#edit" text="Sửa" />
+            <Button layoutX="189.0" layoutY="267.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
+         </children>
+      </HBox>
       <ComboBox fx:id="typeBook" layoutX="114.0" layoutY="138.0" prefWidth="150.0" />
       <TextField fx:id="ID_Author" layoutX="115.0" layoutY="206.0" />
       <TextField fx:id="nameBook" layoutX="115.0" layoutY="104.0" />
