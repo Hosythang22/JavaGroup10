@@ -19,9 +19,12 @@
       <TextField fx:id="ID" layoutX="119.0" layoutY="73.0" />
       <TextField fx:id="Name" layoutX="119.0" layoutY="107.0" />
       <TextField fx:id="Job" layoutX="119.0" layoutY="143.0" />
-      <TextField fx:id="Date" layoutX="119.0" layoutY="179.0" />
-      <Label fx:id="tip" layoutX="119.0" layoutY="216.0" textFill="RED" />
-      <Button layoutX="119.0" layoutY="247.0" mnemonicParsing="false" onAction="#edit" text="Sửa" />
-      <Button layoutX="193.0" layoutY="247.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
+      <HBox layoutX="120.0" layoutY="230.0" spacing="10.0">
+         <children>
+            <Button layoutX="119.0" layoutY="247.0" mnemonicParsing="false" onAction="#edit" text="Sửa" />
+            <Button layoutX="193.0" layoutY="247.0" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
+         </children>
+      </HBox>
+      <DatePicker fx:id="Date" layoutX="119.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" />
    </children>
 </fx:root>
